@@ -1,0 +1,50 @@
+.letsPlayHere {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.theQuestion {
+text-align: center;
+}
+
+#game-container {
+   display: none;
+}
+.theAnswers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.answer{
+    margin-bottom: 5px;
+}
+
+.btn {
+background-color:lightblue;
+border-style: solid;
+border-radius: 5px;
+border-color: darkblue;
+}
+.btn:hover {
+    background-color:lightyellow;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkblue;
+    }
+
+.start-btn {
+
+}
+
+.next-btn {
+
+}
+
+.gameButtons {
+
+}

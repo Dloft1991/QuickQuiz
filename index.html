@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Quick Quiz</title>
 </head>
 <body>
     <div class="letsPlayHere">
-        
+        <h1>Quick Quiz</h1>
+       <div class="game-container" id="game-container">
+        <h3 class="theQuestion" id="theQuestion"> questions goes here</h3>
+        <div class="theAnswers">
+            <button class="answer btn" id="answer-2">two</button>
+            <button class="answer btn" id="answer-3">three</button>
+            <button class="answer btn" id="answer-4">four</button>
+            <button class="answer btn" id="answer-1">one</button>
+        </div>
+       </div>
+
+    <div class="gameButtons">
+        <button class="start-btn btn" id="start-btn" onclick="GameStart()">Start</button>
+        <button class="next-btn btn" id="next-btn">Next</button>
+        <button class="submit-btn btn" id="submit-btn">Submit</button>
     </div>
-    <button class="start">Start</button>
-    <button class="submit">Submit</button>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
