@@ -10,79 +10,83 @@
 </head>
 
 <body>
-    <div class="letsPlayHere">
-        <h1 classname="title">Quick Quiz</h1>
-        <div classname="game-container">
+
+    <h1 classname="title">Quick Quiz</h1>
+    <div classname="game-container">
+        <div id="button-holder">
             <button classname="start-btn" id="start-btn" onclick="startGame()">Start</button>
             <button classname="submit-btn" id="submit-btn" onclick="submit()">Submit</button>
-            <button id="reset-btn" type="button" value="Reset Game" onclick="restart();"><a id="link" href="index.html">RESET</a></button>
-            <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+            <button id="reset-btn" type="button" value="Reset Game" ><a id="link"
+                    href="index.html">Reset</a></button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
 
-            <div class="modal-body">
-                    <p id="number_correct"></p>
+                    <div class="modal-body">
+                        <p id="number_correct"></p>
+                    </div>
+                    <div class="modal-footer">
+
+                        <!--Make this a save to account button-->
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-               
-                <!--Make this a save to account button-->
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+        <br>
+        <form id="questions" name="questions">
+            <div style="align-items: center;">
+                <h3>What color is Thanos?</h3>
+                <label>
+                    <input type="radio" id="mc" value="blue" name="question1" />Blue</label>
+                <label>
+                    <input type="radio" id="mc" value="Purple" name="question1" />Purple</label>
+                <label>
+                    <input type="radio" id="mc" value="red" name="question1" />Red</label>
+                <label>
+                    <input type="radio" id="mc" value="green" name="question1" />Green</label>
             </div>
-          </div>
-        </div>
-      </div>
-<br>
-            <form id="questions" name="questions">
-                <div>
-                    <h3>What color is Thanos?</h3>
-                    <label>
-                        <input type="radio" id="mc" value="blue" name="question1" />Blue</label>
-                    <label>
-                        <input type="radio" id="mc" value="Purple" name="question1" />Purple</label>
-                    <label>
-                        <input type="radio" id="mc" value="red" name="question1" />Red</label>
-                    <label>
-                        <input type="radio" id="mc" value="green" name="question1" />Green</label>
-                </div>
-                <div>
-                    <h3>Who is Starloards favorite actor? </h3>
-                    <label>
-                        <input type="radio" id="mc" value="Brian Cranston" name="question2" />Brian Cranston</label>
-                    <label>
-                        <input type="radio" id="mc" value="Samual L. Jackson" name="question2" />Samual L. Jackson</label>
-                    <label>
-                        <input type="radio" id="mc" value="Kevin Bacon" name="question2" />Kevin Bacon</label>
-                    <label>
-                        <input type="radio" id="mc" value="Chris Pratt" name="question2" />Chris Pratt</label>
-                </div>
-    
-                <div>
-                    <h3>Where is SpiderMan from? </h3>
-                    <label>
-                        <input type="radio" id="mc" value="Queens" name="question3" /> Queens</label>
-                    <label>
-                        <input type="radio" id="mc" value="Orlando" name="question3" />Orlando</label>
-                    <label>
-                        <input type="radio" id="mc" value="Brooklyn" name="question3" />Brooklyn</label>
-                    <label>
-                        <input type="radio" id="mc" value="Portland" name="question3" />Portland</label>
-                </div>
-    
-                <div>
-                    <h3>How many kids does HawkEye have? </h3>
-                    <label>
-                        <input type="radio" id="mc" value="Five" name="question4" /> Five</label>
-                    <label>
-                        <input type="radio" id="mc" value="Twelve" name="question4" />Twelve</label>
-                    <label>
-                        <input type="radio" id="mc" value="Three" name="question4" />Three</label>
-                    <label>
-                        <input type="radio" id="mc" value="Two" name="question4" />Two</label>
-                </div>
-            </form>
-        </div>
+            <div>
+                <h3>Who is Starloards favorite actor? </h3>
+                <label>
+                    <input type="radio" id="mc" value="Brian Cranston" name="question2" />Brian Cranston</label>
+                <label>
+                    <input type="radio" id="mc" value="Samual L. Jackson" name="question2" />Samual L. Jackson</label>
+                <label>
+                    <input type="radio" id="mc" value="Kevin Bacon" name="question2" />Kevin Bacon</label>
+                <label>
+                    <input type="radio" id="mc" value="Chris Pratt" name="question2" />Chris Pratt</label>
+            </div>
+
+            <div>
+                <h3>Where is SpiderMan from? </h3>
+                <label>
+                    <input type="radio" id="mc" value="Queens" name="question3" /> Queens</label>
+                <label>
+                    <input type="radio" id="mc" value="Orlando" name="question3" />Orlando</label>
+                <label>
+                    <input type="radio" id="mc" value="Brooklyn" name="question3" />Brooklyn</label>
+                <label>
+                    <input type="radio" id="mc" value="Portland" name="question3" />Portland</label>
+            </div>
+
+            <div>
+                <h3>How many kids does HawkEye have? </h3>
+                <label>
+                    <input type="radio" id="mc" value="Five" name="question4" /> Five</label>
+                <label>
+                    <input type="radio" id="mc" value="Twelve" name="question4" />Twelve</label>
+                <label>
+                    <input type="radio" id="mc" value="Three" name="question4" />Three</label>
+                <label>
+                    <input type="radio" id="mc" value="Two" name="question4" />Two</label>
+            </div>
+        </form>
     </div>
+
     <script src="main.js"></script>
 </body>
 
