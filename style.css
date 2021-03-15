@@ -1,6 +1,7 @@
 h1 {  text-align: center;
+    text-shadow: 5px 2px 5px blue;
+    font-size: 60px;
 }
-
 #questions{
     display: none;
     padding: 5%;
@@ -57,6 +58,6 @@ button{
     text-align: center;
     color: blue;
     font-size: 50px;
-    text-shadow: 5px 2px 5px blck;
+    text-shadow: 5px 2px 5px blue;
 
 }
