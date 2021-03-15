@@ -51,11 +51,12 @@ button{
     text-align: center;
 }
 #exampleModal {
-    color: black;
-    box-shadow: 5px 2px 5px blue;
-    border: solid black;
-    border-radius: 5px;
-    border-color: blue;
-    width: 5rem;
-    height: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    text-shadow: 5px 2px 5px blck;
+
 }
