@@ -1,38 +1,38 @@
 
 
-
-function GameStart() {
-    console.log("I was clicked")
-    //showing the game
-    document.getElementById("game-container").style.display = "block";
-    //start button gone
-    document.getElementById("start-btn").style.display = "none";
-   //put the question from array
-   document.getElementById("theQuestion").innerHTML = questions[0].question;
-   console.log(questions[0].question);
-}
-
-function NextQuestion() {
+function startGame() {
+  document.getElementById("questions").style.display = "block";
+  document.getElementById("submit-btn").style.display = "block";
+  document.getElementById("start-btn").style.display = "none";
+  
 
 }
-
-function Submit() {
-
-}
-
-var questions = 
-      [
-        {
-          question: "What is the capital of United Kingdom?",
-          choices: ["Manchester", "Birmingham", "London", "Birmingham"],
-          answer: 2
-        },
-        
-        {
-          question: "What is the capital of United States?",
-          choices: ["California", "New York", "Miami", "Florida"],
-          answer: 1
-        }
-        
-        
-      ];
+function submit() {
+  console.log("working");
+      var question1 = document.questions.question1.value;
+      var question2 = document.questions.question2.value;
+      var question3 = document.questions.question3.value;
+      var question4 = document.questions.question4.value;
+      var correct = 0;
+  
+      if (question1 == "Purple") {
+          correct++;
+      }
+      if (question2 == "Kevin Bacon") {
+          correct++;
+      }
+      if (question3 == "Queens") {
+          correct++;
+      }
+      if (question4 == "Three") {
+          correct++;
+      }
+  
+      document.getElementById("questions").style.visibility = "hidden";
+      document.getElementById("reset-btn").style.display = "block";
+      document.getElementById("start-btn").style.display = "none";
+      document.getElementById("submit-btn").style.display = "none";
+      document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+      
+      document.getElementById("after_submit").style.visibility = "visible";
+  }
