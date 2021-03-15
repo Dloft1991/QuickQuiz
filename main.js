@@ -18,7 +18,7 @@ function submit() {
       if (question1 == "Purple") {
           correct++;
       }
-      if (question2 == "Kevin Bacon") {
+      if (question2 == "Chris Pratt") {
           correct++;
       }
       if (question3 == "Queens") {
